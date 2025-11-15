@@ -604,13 +604,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25807658, y: -0.020007199, z: 0.060094986, w: 0.96404606}
+  m_LocalRotation: {x: 0.25789216, y: -0.022258556, z: 0.0685055, w: 0.96348494}
   m_LocalPosition: {x: 0, y: 7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 30, y: -0.5, z: 7}
+  m_LocalEulerAnglesHint: {x: 30, y: -0.5, z: 8}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 1
+  m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -649,11 +649,11 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_TaaSettings:
     m_Quality: 3
-    m_FrameInfluence: 0.1
+    m_FrameInfluence: 0.01999998
     m_JitterScale: 1
     m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    m_VarianceClampScale: 1.2
+    m_ContrastAdaptiveSharpening: 1
   m_Version: 2
 --- !u!114 &330585548
 MonoBehaviour:
@@ -703,7 +703,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -947,24 +947,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1154041141 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4971036207828361922, guid: bfb401797a1342e42b8b7ae63ac0069c, type: 3}
-  m_PrefabInstance: {fileID: 171019702}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1154041143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154041141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b47d22c43bc8590449762fc702ccad13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GoalController
---- !u!1 &1174324854
+--- !u!1 &995241097
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -972,23 +955,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1174324857}
-  - component: {fileID: 1174324856}
-  - component: {fileID: 1174324855}
+  - component: {fileID: 995241100}
+  - component: {fileID: 995241099}
+  - component: {fileID: 995241098}
   m_Layer: 0
-  m_Name: Directional Light (1)
+  m_Name: Directional Light 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1174324855
+--- !u!114 &995241098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174324854}
+  m_GameObject: {fileID: 995241097}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
@@ -1011,18 +994,18 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!108 &1174324856
+--- !u!108 &995241099
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174324854}
+  m_GameObject: {fileID: 995241097}
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 0.88418514, g: 0.86260426, b: 0.899371, a: 1}
-  m_Intensity: 2
+  m_Color: {r: 0.8740639, g: 0.8742138, b: 0.8549701, a: 1}
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1076,13 +1059,13 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!4 &1174324857
+--- !u!4 &995241100
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174324854}
+  m_GameObject: {fileID: 995241097}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1091,6 +1074,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1154041141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4971036207828361922, guid: bfb401797a1342e42b8b7ae63ac0069c, type: 3}
+  m_PrefabInstance: {fileID: 171019702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1154041143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154041141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47d22c43bc8590449762fc702ccad13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoalController
 --- !u!1 &1246563178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,7 +1346,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 339ed9ac34e1ca1469f4453cc8717979, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1707,7 +1707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallController
   rb: {fileID: 2025705109}
-  impulseForce: 3
+  impulseForce: 5.5
 --- !u!1 &2039002764 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5462594697595015656, guid: bfb401797a1342e42b8b7ae63ac0069c, type: 3}
@@ -1809,7 +1809,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 330585546}
   - {fileID: 410087041}
-  - {fileID: 1174324857}
+  - {fileID: 995241100}
   - {fileID: 832575519}
   - {fileID: 2025705113}
   - {fileID: 1618002702}
